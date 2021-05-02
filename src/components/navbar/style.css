@@ -1,0 +1,33 @@
+.menu{
+    display: none;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .headerLabel {
+      display: none;
+    }
+    .menu{
+      display: inline;
+    }
+  }
+
+  nav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: darkblue;
+      color: white;
+      height: 100px;
+      position: fixed;
+      width: 100%;
+  }
+
+  .pages{
+    cursor: pointer;
+    
+  }
+
+  p{
+    font-size: 20px;
+  }
+
