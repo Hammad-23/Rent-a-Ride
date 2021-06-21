@@ -53,7 +53,7 @@ const config = {
 
 export default function FAq() {
   return (
-    <div>
+    <div style={{width:"80%",marginLeft:"150px"}}>
       <Faq data={data} styles={styles} config={config} />
     </div>
   );
