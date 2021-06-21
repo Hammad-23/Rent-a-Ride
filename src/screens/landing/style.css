@@ -1,41 +1,64 @@
-.bg{
-    background-image: url('../../assets/login11.jpeg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 700px;
+.bg {
+  background-image: url("../../assets/login11.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
 }
 
 /* .fullPageContainer{
     background-color: darkblue;
 } */
 
-.pic{
-    height: 100px;
-    width: 200px;
+.pic {
+  height: 100px;
+  width: 200px;
 }
-.pic2{
-    height: 150px;
-    width: 200px;
-}
-
-.carsRow{
-    margin-top: 80px;
-    background-color: white;
-    
+.pic2 {
+  height: 150px;
+  width: 200px;
 }
 
-.carsContainer{
-    height: 200px;
+.carsRow {
+  margin-top: 80px;
+  background-color: white;
 }
 
-.carsCategories{
-    color: darkblue;
-    margin-top: 10px;
-    cursor: pointer;
+.carsContainer {
+  height: 200px;
 }
 
-.carsCategories:hover{
-    color: rgb(100, 0, 92);
+.carsCategories {
+  color: darkblue;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.carsCategories:hover {
+  color: rgb(100, 0, 92);
+}
+.date-input {
+  width: 360px;
+  height: 50px;
+}
+.radio-button {
+}
+.bkn-btn {
+  margin-top: 12px;
+  background-color: rgb(34, 32, 32);
+  width: 30%;
+  height: 50px;
+  border-radius: 10px;
+  border: solid none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: white;
+  /* margin-bottom: 1rem; */
+}
+.line {
+  height: 17px;
+  background-color: darkblue;
+  margin-top: 99px;
 }
