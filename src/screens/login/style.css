@@ -1,7 +1,43 @@
-.back{
-    background-image: url(../../assets/login11.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 40rem;
-    
+.main-div {
+  background-image: url(../../assets/login15.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 658px;
+  opacity: 1.1;
+}
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cover {
+  width: 450px;
+  height: 500px;
+ 
+}
+
+.heading-text {
+  color: darkblue;
+  margin-top: 2rem;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 5px 1;
+  background: none;
+  border: none;
+  border-bottom: 1px solid darkblue;
+  color: darkblue;
+  font-size: 13px;
+  text-transform: uppercase;
+  outline: none;
+  margin-top: 2rem;
+}
+
+.app-form-control::placeholder {
+  color: darkblue;
+}
+
+.app-form-control:focus {
+  border-bottom-color: darkblue;
 }

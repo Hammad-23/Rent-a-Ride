@@ -9,8 +9,14 @@ import Luxury from "../../assets/luxury.png";
 import Suv from "../../assets/suv.png";
 import Vans from "../../assets/vans.png";
 import FAq from "../../components/faq";
+import { useHistory } from "react-router-dom";
 
 export default function Landing() {
+  let history = useHistory();
+
+  const sedan =() => {
+    history.push("/sedan");
+  }
   return (
     <>
       <NavBar />
@@ -19,7 +25,7 @@ export default function Landing() {
       <Container className="fullPageContainer">
         <Row style={{ marginTop: "50px" }}>
           <Col>
-            <h1 style={{ color: "darkblue" }}>
+            <h1  style={{ color: "darkblue" }}>
               What type of Car you are looking for?
             </h1>
           </Col>
@@ -27,7 +33,7 @@ export default function Landing() {
         <Row className="carsRow">
           <Col className="carsContainer">
             <img className="pic" src={Sedan} />
-            <h4 className="carsCategories">Sedan</h4>
+            <h4 onClick={sedan} className="carsCategories">Sedan</h4>
           </Col>
           <Col>
             <img className="pic" src={Hatchback} />

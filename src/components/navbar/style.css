@@ -18,7 +18,7 @@
       background-color: darkblue;
       color: white;
       height: 100px;
-      position: fixed;
+      /* position: fixed; */
       width: 100%;
   }
 

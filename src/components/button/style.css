@@ -1,0 +1,56 @@
+.login-btn {
+  border-radius: 10px;
+  margin-top: 3rem;
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  top: 60%;
+  left: 29%;
+  transform: translate(-10%, -10%);
+  overflow: hidden;
+}
+.button-Div {
+  position: absolute;
+  /* width: 10%; */
+  height: 50%;
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  outline: none;
+  font-size: 1.5rem;
+}
+.bg-one {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  background: darkblue;
+  z-index: -1;
+  transform: translateY(90%);
+  transition: all 0.4s;
+}
+.bg-one:nth-child(3) {
+  left: 50px;
+  transition-delay: 0.1s;
+}
+.bg-one:nth-child(4) {
+  left: 100px;
+  transition-delay: 0.2s;
+}
+.bg-one:nth-child(5) {
+  left: 150px;
+  transition-delay: 0.3s;
+}
+.login-btn:hover .bg-one {
+  transform: translateY(0);
+}
+.heading:hover {
+  color: white;
+}
+.heading {
+  color: black;
+  margin-top: 12px;
+}
