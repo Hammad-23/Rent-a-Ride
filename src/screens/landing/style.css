@@ -9,6 +9,7 @@
 
 /* .fullPageContainer{
     background-color: darkblue;
+   
 } */
 
 .pic{
@@ -24,6 +25,10 @@
     margin-top: 80px;
     background-color: white;
     
+}
+
+img{
+    cursor: pointer;
 }
 
 .carsContainer{

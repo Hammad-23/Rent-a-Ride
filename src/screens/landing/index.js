@@ -8,6 +8,7 @@ import Hatchback from '../../assets/hatch.png'
 import Luxury from '../../assets/luxury.png'
 import Suv from '../../assets/suv.png'
 import Vans from '../../assets/vans.png'
+import Footer from '../../components/footer'
 
 
 
@@ -19,7 +20,10 @@ export default function Landing() {
       <div className='bg'>
       
       </div>
-      <Container className='fullPageContainer'>
+      <Container fluid="md sm" className='fullPageContainer'>
+
+     
+
         <Row style={{marginTop:"50px"}}>
           <Col>
           <h1 style={{color:"darkblue"}}>What type of Car you are looking for?</h1>
@@ -59,9 +63,12 @@ export default function Landing() {
       </Row>
 
       <Row style={{marginTop:"20px"}}>
-
+        
       </Row>
+      
       </Container>
+      
+
     </>
   );
 }
