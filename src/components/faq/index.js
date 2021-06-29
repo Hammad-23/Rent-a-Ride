@@ -40,9 +40,9 @@ const styles = {
   bgColor: "white",
   titleTextColor: "darkblue",
   rowTitleColor: "darkblue",
-  rowContentColor: "black",
+  rowContentColor: "lightGrey",
+  fontFamily:"Bungee Inline",
   arrowColor: "darkblue",
-  
 };
 
 const config = {

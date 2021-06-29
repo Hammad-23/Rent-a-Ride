@@ -1,24 +1,33 @@
 .main-div {
-  background-image: url(../../assets/login15.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  /* background-image: url(../../assets/bg-image.jpg); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
   height: 658px;
-  opacity: 1.1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .back {
+  /* border: solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .cover {
-  width: 450px;
-  height: 500px;
- 
+  width: 600px;
+  height: 400px;
 }
 
 .heading-text {
-  color: darkblue;
+  font-family: "Montserrat", Arial, sans-serif;
   margin-top: 2rem;
+  color:darkblue;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  /* text-align: center; */
 }
 
 .app-form-control {
@@ -27,7 +36,7 @@
   background: none;
   border: none;
   border-bottom: 1px solid darkblue;
-  color: darkblue;
+  color: black;
   font-size: 13px;
   text-transform: uppercase;
   outline: none;

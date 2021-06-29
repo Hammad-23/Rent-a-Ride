@@ -1,0 +1,92 @@
+.fullPageContainer {
+  border: solid none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row-first {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  background-color: lightgray;
+}
+.loc-inpt {
+  height: 40px;
+  border-radius: 0;
+  width: 20%;
+  /* border-left: none; */
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+.btn-book {
+  height: 45px;
+  width: 12%;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  background-color: darkblue;
+  color: white;
+  margin-left: 25px;
+  letter-spacing: 2px;
+}
+.row-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+}
+.img-col {
+  display: flex;
+  padding: 10px 30px 30px;
+  justify-content: center;
+}
+.img {
+  max-width: 440px;
+  max-height: 300px;
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  cursor: pointer;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+.title {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Century Gothic, CenturyGothic, AppleGothic, sans-serif";
+}
+.car-name {
+  color: darkblue;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.city-radio-inpt{
+  height: 15px;
+  width: 19px ;
+}
+.booknow-btn{
+  margin-top: 12px;
+  background-color:darkblue;
+  width: 65%;
+  height: 50px;
+  border-radius: 10px;
+  border: solid none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: white;
+  letter-spacing: 2px;
+}
+.line-two{
+  height: 17px;
+  background-color: darkblue;
+  /* margin-top: 99px; */
+}

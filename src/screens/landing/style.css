@@ -7,10 +7,6 @@
   height: 700px;
 }
 
-/* .fullPageContainer{
-    background-color: darkblue;
-} */
-
 .pic {
   height: 100px;
   width: 200px;
@@ -38,9 +34,25 @@
 .carsCategories:hover {
   color: rgb(100, 0, 92);
 }
+.frbk-head {
+  color: white;
+  margin-top: 12px;
+}
+.inpt-col {
+  margin-top: 19px;
+  display: flex;
+}
 .date-input {
   width: 360px;
-  height: 50px;
+  height: 40px;
+}
+.radio-col {
+  background-color: white;
+}
+.radio-inpt {
+  height: 15px;
+  width: 19px;
+  margin-top: 12px;
 }
 .bkn-btn {
   margin-top: 12px;
@@ -60,3 +72,25 @@
   background-color: darkblue;
   margin-top: 99px;
 }
+.last-header-text {
+  text-decoration: none;
+  color: darkblue;
+  font-size: 12px;
+}
+.icons-fac {
+  display: flex;
+  justify-content: space-evenly;
+}
+.d-block {
+  font-size: 14px;
+  margin-top: 10px 0;
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+/* @media only screen and (max-width: 470px) */

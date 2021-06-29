@@ -14,18 +14,18 @@ import { useHistory } from "react-router-dom";
 export default function Landing() {
   let history = useHistory();
 
-  const sedan =() => {
+  const sedan = () => {
     history.push("/sedan");
-  }
+  };
   return (
     <>
       <NavBar />
 
       <div className="bg"></div>
-      <Container className="fullPageContainer">
+      <Container>
         <Row style={{ marginTop: "50px" }}>
           <Col>
-            <h1  style={{ color: "darkblue" }}>
+            <h1 style={{ color: "darkblue" }}>
               What type of Car you are looking for?
             </h1>
           </Col>
@@ -33,7 +33,9 @@ export default function Landing() {
         <Row className="carsRow">
           <Col className="carsContainer">
             <img className="pic" src={Sedan} />
-            <h4 onClick={sedan} className="carsCategories">Sedan</h4>
+            <h4 onClick={sedan} className="carsCategories">
+              Sedan
+            </h4>
           </Col>
           <Col>
             <img className="pic" src={Hatchback} />
@@ -62,26 +64,36 @@ export default function Landing() {
               marginTop: "90px",
             }}
           >
-            <h2 style={{ color: "white", marginTop: "12px" }}>FOR-BOOKING</h2>
-
-            <Col style={{ marginTop: "19px" }}>
+            <h2 className="frbk-head">FOR-BOOKING</h2>
+            <Col className="inpt-col">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                style={{
+                  background: "white",
+                  height: "36px",
+                  width: "20px",
+                }}
+                fill="currentColor"
+                class="bi bi-geo-alt-fill"
+                viewBox="0 0 16 16"
+              >
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+              </svg>
               <input
-                placeholder="Enter Pick-Up Location*"
+                style={{ borderRadius: "none" }}
                 className="form-control"
+                placeholder="Enter Pick-Up Location*"
                 type="text"
-                style={{ marginTop: "12px" }}
               />
             </Col>
             <Col style={{ display: "flex" }}>
               <input className="date-input" type="date" />
-              <input value="Form Date" className="date-input" type="time" />
-              <Col style={{ backgroundColor: "white" }}>
-                <input
-                  style={{ height: "17px", width: "30px", marginTop: "12px" }}
-                  type="radio"
-                />
+              <input className="date-input" type="time" />
+
+              <Col className="radio-col">
+                <input className="radio-inpt" type="radio" />
                 <label> FULL DAY</label>
-                <input style={{ height: "17px", width: "30px" }} type="radio" />
+                <input className="radio-inpt" type="radio" />
                 <label> SHORT RENTAL</label>
               </Col>
             </Col>
@@ -91,7 +103,7 @@ export default function Landing() {
           </Col>
         </Row>
 
-        <Row style={{ marginTop: "20px" }}></Row>
+        {/* <Row style={{ marginTop: "20px" }}></Row> */}
       </Container>
       <Row className="line"> </Row>
       <Row>
@@ -107,66 +119,63 @@ export default function Landing() {
         </Col>
       </Row>
       <Row className="line"> </Row>
-      <Row style={{ marginTop: "35px" }}>
+      <Row style={{ marginTop: "30px" }}>
         <Col>
-          <a style={{ textDecoration: "none", color: "darkblue" }} href="#">
+          <a className="last-header-text" href="#">
             ABOUT US
           </a>
         </Col>
         <Col>
-          <a style={{ textDecoration: "none", color: "darkblue" }} href="#">
+          <a className="last-header-text" href="#">
             OUR CLIENTS
           </a>
         </Col>
         <Col>
-          <a style={{ textDecoration: "none", color: "darkblue" }} href="#">
-            BECOME A CHAUFFEUR
-          </a>
-        </Col>
-        <Col>
-          <a style={{ textDecoration: "none", color: "darkblue" }} href="#">
-            REGISTER YOUR CAR
-          </a>
-        </Col>
-        <Col>
-          <a style={{ textDecoration: "none", color: "darkblue" }} href="#">
+          <a className="last-header-text" href="#">
             TERMS OF USE
           </a>
         </Col>
         <Col>
-          <a style={{ textDecoration: "none", color: "darkblue" }} href="#">
+          <a className="last-header-text" href="#">
             PRIVACY POLICY
           </a>
         </Col>
         <Col>
-          <a style={{ textDecoration: "none", color: "darkblue" }} href="#">
+          <a className="last-header-text" href="#">
             CONTACT US
           </a>
         </Col>
         <Col>
-          <a style={{ textDecoration: "none", color: "darkblue" }} href="#">
+          <a className="last-header-text" href="#">
             FAQs
           </a>
         </Col>
         <Col>
-          <a style={{ textDecoration: "none", color: "darkblue" }} href="#">
+          <a className="last-header-text" href="#">
             SITEMAP
           </a>
         </Col>
       </Row>
       <Row
         style={{
-          backgroundColor: " rgb(34, 32, 32)",
+          backgroundColor: " #212529",
           height: "100px",
           marginTop: "20px",
         }}
       >
         <Col>
-          <h4 style={{ color: "white" }}>
-            All rights reserved. Rent-A-Ride 2020 - Powered by Ideabox
-          </h4>
+        <span _ngcontent-serverapp-c3 class="d-block" >
+        "All rights reserved.  Rent-A-Ride 2020"
+        </span>
+          <a _ngcontent-serverapp-c3 
+          style={{color:"#fff"}}
+           href="https://factualcode.web.app/">
+            Factual Code
+          </a>
+
         </Col>
-        <Col>
+
+        <Col className="icons-fac">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
