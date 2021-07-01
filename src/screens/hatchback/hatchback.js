@@ -3,31 +3,21 @@ import { useHistory } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./style.css";
 import NavBar from "../../components/navbar";
-import Corolla from "../../assets/corolla.png";
-import Civic from "../../assets/civic.png";
-import Yariss from "../../assets/Yariss.png";
+import Mira from "../../assets/mira.png";
+import Wagon from "../../assets/Wagon.png";
 import Footer from "../../components/footer/footer";
 
-export default function Sedan() {
-  let history = useHistory();
-  const bookNow=()=>{
-    history.pushState("/book")
-  }
+export default function Hatchback() {
   let cars = [
     {
-      name: "Civic",
-      price: "7,500 PKR/day",
-      img: Civic,
+      name: "Mira",
+      price: "2,500 PKR/day",
+      img: Mira,
     },
     {
-      name: "Corolla",
-      price: "3,000 PKR/day",
-      img: Corolla,
-    },
-    {
-      name: "Yariss",
-      price: "2,700 PKR/day",
-      img: Yariss,
+      name: "WagonR",
+      price: "2,400 PKR/day",
+      img: Wagon,
     },
   ];
   return (
@@ -70,7 +60,7 @@ export default function Sedan() {
             <Row className="row-main">
               <Col style={{ padding: "10px 0" }}>
                 <Col className="img-col">
-                  <img onClick={bookNow} className="img" src={item.img} />
+                  <img className="img" src={item.img} />
                 </Col>
               </Col>
 

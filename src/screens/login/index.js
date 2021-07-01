@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Cover from "../../assets/card-img.jpg";
+// import Signup from "../../screens/signUp/signUp.js"
 import Fortuner from '../../assets/fortuner.png'
 import { useHistory } from "react-router-dom";
 import LoginBtn from "../../components/button/button";
@@ -9,9 +10,12 @@ import LoginBtn from "../../components/button/button";
 export default function LogIn() {
   let history = useHistory();
 
-  const login = () => {
+  const landing = () => {
     history.push("/landing");
   };
+  const signUp = () => {
+    history.push("/signup")
+  }
   return (
     <div className="main-div">
       <form>
@@ -37,14 +41,15 @@ export default function LogIn() {
                 type="password"
                 placeholder="Password"
               />
-              {/* <Col>
-              <a style={{ textDecoration: "none" }} href="">
+              
+              <Col>
+                <LoginBtn onClick={landing} />
+              </Col>
+              <Col>
+              <a style={{ textDecoration: "none" }} href="signUp">
                 Don't have a account ? Resgister
               </a>
-            </Col> */}
-              <Col>
-                <LoginBtn onClick={login} />
-              </Col>
+            </Col>
             </Col>
           </Row>
         </Container>
