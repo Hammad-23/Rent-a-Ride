@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Faq from "react-faq-component";
 
 const data = {
-  //   title: "FREQUENTLY ASKED QUESTIONS",
+    // title: "FREQUENTLY ASKED QUESTIONS",
   rows: [
     {
       title: "Who can rent a car?",

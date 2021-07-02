@@ -1,5 +1,5 @@
 import React from "react";
-// import "./style.c/ss";
+import "./style.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import LoginBtn from "../../components/button/button";

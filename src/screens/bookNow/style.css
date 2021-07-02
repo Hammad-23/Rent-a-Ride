@@ -1,0 +1,17 @@
+.lines{
+    height: 2px;
+    background-color: gray;
+    /* margin-top: 99px; */
+}
+.col-one{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.rent-head{
+    color: darkblue;
+    font-family: "Century Gothic, CenturyGothic, AppleGothic, sans-serif";
+}
+p{
+ 
+    font-family: "Century Gothic, CenturyGothic, AppleGothic, sans-serif";   
+}

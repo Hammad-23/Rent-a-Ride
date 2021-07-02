@@ -6,6 +6,7 @@ import Landing from "../screens/landing";
 import Sedan from "../screens/sedan/sedan";
 import Hatchback from "../screens/hatchback/hatchback";
 import Book from '../screens/bookNow'
+import Carbook from "../screens/carbook/carbook";
 
 export default function ReactRouter() {
   return (
@@ -35,6 +36,9 @@ export default function ReactRouter() {
           </Route>
           <Route exact path="/book">
             <Book/>
+          </Route>
+          <Route exact path="/carbook">
+            <Carbook/>
           </Route>
         </Switch>
       </div>

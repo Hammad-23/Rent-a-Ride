@@ -10,10 +10,15 @@ import Footer from "../../components/footer/footer";
 
 export default function Sedan() {
   let history = useHistory();
-  const bookNow=()=>{
-    history.pushState("/book")
+
+  const book = () => {
+    history.push("/book");
+  };
+
+  const carbook = () =>{
+    history.push("/carbook")
   }
-  let cars = [
+  const cars = [
     {
       name: "Civic",
       price: "7,500 PKR/day",
@@ -70,7 +75,7 @@ export default function Sedan() {
             <Row className="row-main">
               <Col style={{ padding: "10px 0" }}>
                 <Col className="img-col">
-                  <img onClick={bookNow} className="img" src={item.img} />
+                  <img onClick={book} className="img" src={item.img} />
                 </Col>
               </Col>
 
@@ -88,7 +93,7 @@ export default function Sedan() {
                   <input className="city-radio-inpt" type="radio" />
                   <label> Out City</label>
                   <Col>
-                    <button className="booknow-btn">Book Now</button>
+                    <button onClick={carbook} className="booknow-btn">Book Now</button>
                   </Col>
                 </Col>
               </Col>
