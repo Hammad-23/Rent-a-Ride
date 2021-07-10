@@ -45,6 +45,9 @@
 .date-input {
   width: 360px;
   height: 40px;
+  border-top: none;
+  border-left: none;
+  /* border-right: none; */
 }
 .radio-col {
   background-color: white;

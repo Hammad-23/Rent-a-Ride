@@ -12,6 +12,7 @@ import FAq from "../../components/faq";
 import { useHistory } from "react-router-dom";
 import Footer from "../../components/footer/footer";
 
+
 export default function Landing() {
   let history = useHistory();
 
@@ -19,9 +20,9 @@ export default function Landing() {
     history.push("/sedan");
   };
 
-  const hatchback=()=>{
-    history.push("/hatchback")
-  }
+  const hatchback = () => {
+    history.push("/hatchback");
+  };
   return (
     <>
       <NavBar />
@@ -44,7 +45,9 @@ export default function Landing() {
           </Col>
           <Col>
             <img className="pic" src={Hatchback} />
-            <h4 onClick={hatchback} className="carsCategories">Hatchback</h4>
+            <h4 onClick={hatchback} className="carsCategories">
+              Hatchback
+            </h4>
           </Col>
           <Col>
             <img className="pic" src={Luxury} />
@@ -91,37 +94,31 @@ export default function Landing() {
                 type="text"
               />
             </Col>
-            {/* <Col style={{ display: "flex" }}>
+            <Col style={{ display: "flex" }}>
               <input className="date-input" type="date" />
               <input className="date-input" type="time" />
 
-              <Col className="radio-col">
-                <input className="radio-inpt" type="radio" />
-                <label> </label>
-                <input className="radio-inpt" type="radio" />
-                <label> </label>
+              <Col
+                style={{ backgroundColor: "white" }}
+                className="form-check form-check-inline"
+              >
+                <input type="radio" name="inlineRadioOptions" />
+                <label className="form-check-label" for="inlineRadio1">
+                  FULL DAY
+                </label>
+
+                <input type="radio" name="inlineRadioOptions" />
+                <label className="form-check-label" for="inlineRadio2">
+                  SHORT RENTAL
+                </label>
               </Col>
-            </Col> */}
-
-
-<Col className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"/>
-  <label className="form-check-label" for="inlineRadio1">FULL DAY</label>
-</Col>
-<Col className="form-check form-check-inline">
-  <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"/>
-  <label className="form-check-label" for="inlineRadio2">2</label>
-</Col>
-
-
-
+            </Col>
 
             <Col>
               <button className="bkn-btn">BOOK NOW</button>
             </Col>
           </Col>
         </Row>
-
       </Container>
       <Row className="line"> </Row>
       <Row>
@@ -137,10 +134,7 @@ export default function Landing() {
         </Col>
       </Row>
       {/* <Row className="line"> </Row> */}
-      <Footer/>
-
-
- 
+      <Footer />
     </>
   );
 }
