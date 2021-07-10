@@ -5,8 +5,9 @@ import Signup from "../screens/signUp/signUp";
 import Landing from "../screens/landing";
 import Sedan from "../screens/sedan/sedan";
 import Hatchback from "../screens/hatchback/hatchback";
-import Book from '../screens/bookNow'
+import Book from "../screens/bookNow";
 import Carbook from "../screens/carbook/carbook";
+import Luxury from "../screens/luxury/luxury";
 
 export default function ReactRouter() {
   return (
@@ -22,7 +23,7 @@ export default function ReactRouter() {
             <LogIn />
           </Route>
           <Route exact path="/signup">
-            <Signup/>
+            <Signup />
           </Route>
           <Route exact path="/landing">
             <Landing />
@@ -32,13 +33,16 @@ export default function ReactRouter() {
             <Sedan />
           </Route>
           <Route exact path="/hatchback">
-            <Hatchback/>
+            <Hatchback />
           </Route>
           <Route exact path="/book">
-            <Book/>
+            <Book />
           </Route>
           <Route exact path="/carbook">
-            <Carbook/>
+            <Carbook />
+          </Route>
+          <Route exact path="/luxury">
+            <Luxury />
           </Route>
         </Switch>
       </div>

@@ -23,6 +23,10 @@ export default function Landing() {
   const hatchback = () => {
     history.push("/hatchback");
   };
+
+  const luxury = () => {
+    history.push("/luxury")
+  }
   return (
     <>
       <NavBar />
@@ -51,7 +55,7 @@ export default function Landing() {
           </Col>
           <Col>
             <img className="pic" src={Luxury} />
-            <h4 className="carsCategories">Luxury</h4>
+            <h4 onClick={luxury} className="carsCategories">Luxury</h4>
           </Col>
           <Col>
             <img className="pic" src={Suv} />

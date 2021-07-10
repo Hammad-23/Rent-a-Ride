@@ -1,23 +1,28 @@
 import React from "react";
 import "./style.css";
-import { useHistory } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import NavBar from "../../components/navbar";
-import Mira from "../../assets/mira.png";
-import Wagon from "../../assets/Wagon.png";
 import Footer from "../../components/footer/footer";
+import Audi from "../../assets/audi.png";
+import AudiA5 from "../../assets/audiafive.png";
+import Mercedes from "../../assets/mercedes.png";
 
-export default function Hatchback() {
+export default function luxury() {
   let cars = [
     {
-      name: "Mira",
-      price: "2,500 PKR/day",
-      img: Mira,
+      name: "Audi A4",
+      price: "23,000 PKR/day",
+      img: Audi,
     },
     {
-      name: "WagonR",
-      price: "2,400 PKR/day",
-      img: Wagon,
+      name: "Audi A5",
+      price: "40,000 PKR/day",
+      img: AudiA5,
+    },
+    {
+      name: "Mercedes",
+      price: "19,000 PKR/day",
+      img: Mercedes,
     },
   ];
   return (
