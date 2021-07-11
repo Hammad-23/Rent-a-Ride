@@ -11,11 +11,23 @@ import Vans from "../../assets/vans.png";
 import FAq from "../../components/faq";
 import { useHistory } from "react-router-dom";
 
+
 export default function Landing() {
   let history = useHistory();
 
   const sedan =() => {
     history.push("/sedan");
+<<<<<<< HEAD
+=======
+  };
+
+  const hatchback = () => {
+    history.push("/hatchback");
+  };
+
+  const luxury = () => {
+    history.push("/luxury")
+>>>>>>> d3330cf132c55e8abb27a9a47d0188e15f991ab5
   }
   return (
     <>
@@ -37,11 +49,17 @@ export default function Landing() {
           </Col>
           <Col>
             <img className="pic" src={Hatchback} />
+<<<<<<< HEAD
             <h4 className="carsCategories">Hatchback</h4>
+=======
+            <h4 onClick={hatchback} className="carsCategories">
+              Hatchback
+            </h4>
+>>>>>>> d3330cf132c55e8abb27a9a47d0188e15f991ab5
           </Col>
           <Col>
             <img className="pic" src={Luxury} />
-            <h4 className="carsCategories">Luxury</h4>
+            <h4 onClick={luxury} className="carsCategories">Luxury</h4>
           </Col>
           <Col>
             <img className="pic" src={Suv} />
@@ -74,6 +92,7 @@ export default function Landing() {
             </Col>
             <Col style={{ display: "flex" }}>
               <input className="date-input" type="date" />
+<<<<<<< HEAD
               <input value="Form Date" className="date-input" type="time" />
               <Col style={{ backgroundColor: "white" }}>
                 <input
@@ -85,13 +104,36 @@ export default function Landing() {
                 <label> SHORT RENTAL</label>
               </Col>
             </Col>
+=======
+              <input className="date-input" type="time" />
+
+              <Col
+                style={{ backgroundColor: "white" }}
+                className="form-check form-check-inline"
+              >
+                <input type="radio" name="inlineRadioOptions" />
+                <label className="form-check-label" for="inlineRadio1">
+                  FULL DAY
+                </label>
+
+                <input type="radio" name="inlineRadioOptions" />
+                <label className="form-check-label" for="inlineRadio2">
+                  SHORT RENTAL
+                </label>
+              </Col>
+            </Col>
+
+>>>>>>> d3330cf132c55e8abb27a9a47d0188e15f991ab5
             <Col>
               <button className="bkn-btn">BOOK NOW</button>
             </Col>
           </Col>
         </Row>
+<<<<<<< HEAD
 
         <Row style={{ marginTop: "20px" }}></Row>
+=======
+>>>>>>> d3330cf132c55e8abb27a9a47d0188e15f991ab5
       </Container>
       <Row className="line"> </Row>
       <Row>
@@ -106,6 +148,7 @@ export default function Landing() {
           <FAq />
         </Col>
       </Row>
+<<<<<<< HEAD
       <Row className="line"> </Row>
       <Row style={{ marginTop: "35px" }}>
         <Col>
@@ -204,6 +247,10 @@ export default function Landing() {
           </svg>
         </Col>
       </Row>
+=======
+      {/* <Row className="line"> </Row> */}
+      <Footer />
+>>>>>>> d3330cf132c55e8abb27a9a47d0188e15f991ab5
     </>
   );
 }

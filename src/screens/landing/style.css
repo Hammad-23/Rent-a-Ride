@@ -41,7 +41,22 @@
 }
 .date-input {
   width: 360px;
+<<<<<<< HEAD
   height: 50px;
+=======
+  height: 40px;
+  border-top: none;
+  border-left: none;
+  /* border-right: none; */
+}
+.radio-col {
+  background-color: white;
+}
+.radio-inpt {
+  height: 15px;
+  width: 19px;
+  margin-top: 12px;
+>>>>>>> d3330cf132c55e8abb27a9a47d0188e15f991ab5
 }
 .bkn-btn {
   margin-top: 12px;

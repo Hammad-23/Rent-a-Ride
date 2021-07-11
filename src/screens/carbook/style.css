@@ -1,0 +1,33 @@
+.main-Row {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  margin-top: 15px;
+  color: darkblue;
+  font-family: "Century Gothic, CenturyGothic, AppleGothic, sans-serif";
+}
+.inpts {
+  width: 34%;
+  height: 35px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  border-bottom-color: darkblue;
+  margin-top: 34px;
+}
+.sbmt-btn {
+  height: 50px;
+  width: 10%;
+  border-radius: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  background-color: darkblue;
+  color: white;
+  margin-left: 38rem;
+  margin-top: 20px;
+}
