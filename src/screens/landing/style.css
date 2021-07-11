@@ -7,6 +7,11 @@
   height: 700px;
 }
 
+/* .fullPageContainer{
+    background-color: darkblue;
+   
+} */
+
 .pic {
   height: 100px;
   width: 200px;
@@ -34,25 +39,9 @@
 .carsCategories:hover {
   color: rgb(100, 0, 92);
 }
-.frbk-head {
-  color: white;
-  margin-top: 12px;
-}
-.inpt-col {
-  margin-top: 19px;
-  display: flex;
-}
 .date-input {
   width: 360px;
-  height: 40px;
-}
-.radio-col {
-  background-color: white;
-}
-.radio-inpt {
-  height: 15px;
-  width: 19px;
-  margin-top: 12px;
+  height: 50px;
 }
 .bkn-btn {
   margin-top: 12px;
@@ -71,9 +60,4 @@
   height: 17px;
   background-color: darkblue;
   margin-top: 99px;
-}
-.last-header-text {
-  text-decoration: none;
-  color: darkblue;
-  font-size: 12px;
 }
